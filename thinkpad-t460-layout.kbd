@@ -58,5 +58,5 @@
     _ _ _ _ _ KeyKpAsterisk KeyKp7 KeyKp8 KeyKp9 KeyKpPlus
     _ _ _ _ _ KeyKpMinus KeyKp4 KeyKp5 KeyKp6 KeyKpEqual
     _ _ _ _ _ KeyNumLock KeyKp1 KeyKp2 KeyKp3 KeyKpSlash
-	_ _ KeyKp0 KeyKpDot
+	_ KeyKp0 KeyKpDot _
 )
