@@ -8,6 +8,7 @@
     q w e r t y u i o p
     a s d f g h j k l ;
     z x c v b n m , . /
+	lalt spc ralt ssrq
 )
 
 (defalias
@@ -28,22 +29,34 @@
     mac_4 (tap-macro ` ` KeyLeft)
     mac_5 (tap-macro ' ' KeyLeft)
     mac_6 (tap-macro " " KeyLeft)
+
+    fnc_v (tap-hold-next-release 200 v (layer-toggle numpad))
 )
 
 (deflayer homerowmod
     _ _ _ _ _ _ _ _ _ _
     @met_a @alt_s @ctl_d @fnc_f g h @fnc_j @ctl_k @alt_l @met_;
-    _ _ _ _ _ _ _ _ _ _
+    _ _ _ @fnc_v _ _ _ _ _ _
+	_ _ _ _
 )
 
 (deflayer f_layer
     _ _ _ _ _ @mac_0 @mac_1 @mac_2 @mac_3 + 
     _ _ _ _ _ KeyLeft KeyDown KeyUp KeyRight =
     _ _ _ _ _ # KeyHome KeyPageDown KeyPageUp KeyEnd
+	_ _ _ _
 )
 
 (deflayer j_layer
     @mac_4 @mac_5 esc @mac_6 - _ _ _ _ _
     @ $ & bspc tab _ _ _ _ _
     % * ^ _ ! _ _ _ _ _
+	_ _ _ _
+)
+
+(deflayer numpad
+    _ _ _ _ _ KeyKpAsterisk KeyKp7 KeyKp8 KeyKp9 KeyKpPlus
+    _ _ _ _ _ KeyKpMinus KeyKp4 KeyKp5 KeyKp6 KeyKpEqual
+    _ _ _ _ _ KeyNumLock KeyKp1 KeyKp2 KeyKp3 KeyKpSlash
+	_ _ KeyKp0 KeyKpDot
 )
