@@ -5,7 +5,9 @@
 )
 
 (defsrc
+    q w e r t y u i o p
     a s d f g h j k l ;
+	z x c v b n m , . /
 )
 
 (defalias
@@ -15,13 +17,33 @@
     ctl_k (tap-hold-next-release 200 k lctl)
     alt_l (tap-hold-next-release 200 l lalt)
     met_; (tap-hold-next-release 200 ; lmet)
+
 	fnc_f (tap-hold-next-release 200 f (layer-toggle f_layer))
+	mac_0 (tap-macro < > KeyLeft)
+	mac_1 (tap-macro \( \) KeyLeft)
+	mac_2 (tap-macro [ ] KeyLeft)
+	mac_3 (tap-macro { } KeyLeft)
+
+	fnc_j (tap-hold-next-release 200 j (layer-toggle j_layer))
+	mac_4 (tap-macro ` ` KeyLeft)
+	mac_5 (tap-macro ' ' KeyLeft)
+	mac_6 (tap-macro " " KeyLeft)
 )
 
 (deflayer homerowmod
-    @met_a @alt_s @ctl_d @fnc_f g h j @ctl_k @alt_l @met_;
+    _ _ _ _ _ _ _ _ _ _
+    @met_a @alt_s @ctl_d @fnc_f g h @fnc_j @ctl_k @alt_l @met_;
+    _ _ _ _ _ _ _ _ _ _
 )
 
 (deflayer f_layer
-    _ _ _ _ _ KeyLeft KeyDown KeyUp KeyRight _
+    _ _ _ _ _ @mac_0 @mac_1 @mac_2 @mac_3 + 
+    _ _ _ _ _ KeyLeft KeyDown KeyUp KeyRight =
+    _ _ _ _ _ # KeyHome KeyPageDown KeyPageUp KeyEnd
+)
+
+(deflayer j_layer
+    @mac_4 @mac_5 esc @mac_6 - _ _ _ _ _
+    @ $ & bspc tab _ _ _ _ _
+    % * ^ _ ! _ _ _ _ _
 )
