@@ -18,16 +18,16 @@
     alt_l (tap-hold-next-release 200 l lalt)
     met_; (tap-hold-next-release 200 ; lmet)
 
-	fnc_f (tap-hold-next-release 200 f (layer-toggle f_layer))
-	mac_0 (tap-macro < > KeyLeft)
-	mac_1 (tap-macro \( \) KeyLeft)
-	mac_2 (tap-macro [ ] KeyLeft)
-	mac_3 (tap-macro { } KeyLeft)
+    fnc_f (tap-hold-next-release 200 f (layer-toggle f_layer))
+    mac_0 (tap-macro < > KeyLeft)
+    mac_1 (tap-macro \( \) KeyLeft)
+    mac_2 (tap-macro [ ] KeyLeft)
+    mac_3 (tap-macro { } KeyLeft)
 
-	fnc_j (tap-hold-next-release 200 j (layer-toggle j_layer))
-	mac_4 (tap-macro ` ` KeyLeft)
-	mac_5 (tap-macro ' ' KeyLeft)
-	mac_6 (tap-macro " " KeyLeft)
+    fnc_j (tap-hold-next-release 200 j (layer-toggle j_layer))
+    mac_4 (tap-macro ` ` KeyLeft)
+    mac_5 (tap-macro ' ' KeyLeft)
+    mac_6 (tap-macro " " KeyLeft)
 )
 
 (deflayer homerowmod
