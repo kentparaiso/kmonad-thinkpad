@@ -16,7 +16,7 @@
     alt_s (tap-hold-next-release 200 s lalt)
     ctl_d (tap-hold-next-release 200 d lctl)
     ctl_k (tap-hold-next-release 200 k rctl)
-    alt_l (tap-hold-next-release 200 l ralt)
+    alt_l (tap-hold-next-release 200 l lalt)
     met_; (tap-hold-next-release 200 ; rmet)
 
     spc_lsft (tap-hold-next-release 200 spc lsft)
