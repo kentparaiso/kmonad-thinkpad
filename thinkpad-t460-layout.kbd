@@ -12,12 +12,12 @@
 )
 
 (defalias
-    met_a (tap-hold-next-release 200 a lmet)
-    alt_s (tap-hold-next-release 200 s lalt)
+    met_a (tap-hold-next-release 300 a lmet)
+    alt_s (tap-hold-next-release 250 s lalt)
     ctl_d (tap-hold-next-release 200 d lctl)
     ctl_k (tap-hold-next-release 200 k rctl)
-    alt_l (tap-hold-next-release 200 l lalt)
-    met_; (tap-hold-next-release 200 ; rmet)
+    alt_l (tap-hold-next-release 250 l lalt)
+    met_; (tap-hold-next-release 300 ; rmet)
 
     spc_lsft (tap-hold-next-release 200 spc lsft)
     fnc_caps (layer-toggle caps_layer)
