@@ -28,9 +28,8 @@
     mac_3 (tap-macro { } KeyLeft)
 
     fnc_j (tap-hold-next-release 200 j (layer-toggle j_layer))
-    mac_4 (tap-macro ` ` KeyLeft)
-    mac_5 (tap-macro ' ' KeyLeft)
-    mac_6 (tap-macro " " KeyLeft)
+    mac_4 (tap-macro ' ' KeyLeft)
+    mac_5 (tap-macro " " KeyLeft)
 
     fnc_v (tap-hold-next-release 200 v (layer-toggle numpad))
 )
@@ -50,7 +49,7 @@
 )
 
 (deflayer j_layer
-    @mac_4 @mac_5 esc @mac_6 - _ _ _ _ _
+    ` @mac_4 esc @mac_5 - _ _ _ _ _
     @ $ & bspc tab _ _ _ _ _
     % * ^ _ ! _ _ _ _ _
     _ _ _ _ _
