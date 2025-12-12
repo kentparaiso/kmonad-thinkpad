@@ -1,5 +1,6 @@
 (defcfg
     input (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+    ;; input (device-file "/dev/input/by-id/usb-ITE_Tech._Inc._ITE_Device_8910_-event-kbd")
     output (uinput-sink "My KMonad output")
     fallthrough true
 )
@@ -42,7 +43,7 @@
 )
 
 (deflayer f_layer
-    _ _ _ _ _ @mac_0 @mac_1 @mac_2 @mac_3 + 
+    _ _ _ _ _ @mac_0 @mac_1 @mac_2 @mac_3 +
     _ _ _ _ _ KeyLeft KeyDown KeyUp KeyRight =
     _ _ _ _ _ # KeyHome KeyPageDown KeyPageUp KeyEnd
     _ _ _ _ _
